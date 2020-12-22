@@ -117,7 +117,8 @@ ul {
 }
 
 .home-text-container{
-    font-family: 'Raleway';
+	font-family: 'Raleway';
+	font-weight: 500;
     padding:20px 10%;
     width:50%;
     display: flex;
