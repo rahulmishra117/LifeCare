@@ -1,0 +1,116 @@
+/** Body CSS sample **/
+body {
+  background: #fff7e9;
+}
+
+/** Bootstrap Cards **/
+.card {
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.card-body {
+  color: black;
+  text-shadow: 0px 1px 0px black;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-position: top center;
+  transition: 0.5s ease;
+  transform: 0.5s ease;
+}
+.card-body a {
+  transition: 0.5s ease;
+  color: orange;
+  text-decoration: none;
+}
+.card-body:hover a {
+  color: #960202;
+}
+
+.card-footer {
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+[data-filter=overlay-success]:before, [data-filter=overlay-info]:before, [data-filter=overlay-theme]:before, [data-filter=overlay-secondary]:before, [data-filter=overlay-alert]:before, [data-filter=overlay-warning]:before, [data-filter=overlay-primary]:before, [data-filter=overlay-dark]:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+[data-filter=overlay-success], [data-filter=overlay-info], [data-filter=overlay-theme], [data-filter=overlay-secondary], [data-filter=overlay-alert], [data-filter=overlay-warning], [data-filter=overlay-primary], [data-filter=overlay-dark] {
+  background-size: cover;
+  position: relative;
+}
+[data-filter=overlay-success] > *, [data-filter=overlay-info] > *, [data-filter=overlay-theme] > *, [data-filter=overlay-secondary] > *, [data-filter=overlay-alert] > *, [data-filter=overlay-warning] > *, [data-filter=overlay-primary] > *, [data-filter=overlay-dark] > * {
+  position: relative;
+}
+
+[data-filter=overlay-dark] > * {
+  position: relative;
+}
+[data-filter=overlay-primary] > * {
+  position: relative;
+}
+[data-filter=overlay-warning] > * {
+  position: relative;
+}
+[data-filter=overlay-alert] > * {
+  position: relative;
+}
+[data-filter=overlay-secondary] > * {
+  position: relative;
+}
+[data-filter=overlay-theme] > * {
+  position: relative;
+}
+[data-filter=overlay-info] > * {
+  position: relative;
+}
+[data-filter=overlay-success] > * {
+  position: relative;
+}
+[data-filter=overlay-warning] > * {
+  position: relative;
+}
+[data-filter=overlay-dark]:before {
+ /* background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+[data-filter=overlay-primary]:before {
+ /* background-color: rgba(0, 0, 255, 0.5);*/
+}
+
+[data-filter=overlay-alert]:before {
+  /*background-color: rgba(255, 165, 0, 0.5);*/
+}
+
+[data-filter=overlay-secondary]:before {
+ /* background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+[data-filter=overlay-theme]:before {
+ /* background-color: rgba(0, 128, 0, 0.3);*/
+}
+
+[data-filter=overlay-info]:before {
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+[data-filter=overlay-success]:before {
+  background-color: rgba(255, 0, 255, 0.5);
+}
+
+[data-filter=overlay-warning]:before {
+  background-color: rgba(255, 0, 0, 0.5);
+}
