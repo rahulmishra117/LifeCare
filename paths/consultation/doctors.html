@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>LifeCare</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+			crossorigin="anonymous"
+		/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+  	h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
+.product-grid{font-family:Raleway,sans-serif;text-align:center;padding:0 0 72px;border:1px solid rgba(0,0,0,.1);overflow:hidden;position:relative;z-index:1}
+.product-grid .product-image{position:relative;transition:all .3s ease 0s;height:180px;}
+.product-grid .product-image a{display:block}
+.product-grid .product-image img{width:100%;height:auto;}
+.product-grid .pic-1{opacity:1;transition:all .3s ease-out 0s}
+.product-grid:hover .pic-1{opacity:1}
+.product-grid .pic-2{opacity:0;position:absolute;top:0;left:0;transition:all .3s ease-out 0s}
+.product-grid:hover .pic-2{opacity:1}
+.product-grid .social{width:150px;padding:0;margin:0;list-style:none;opacity:0;transform:translateY(-50%) translateX(-50%);position:absolute;top:60%;left:50%;z-index:1;transition:all .3s ease 0s}
+.product-grid:hover .social{opacity:1;top:50%}
+.product-grid .social li{display:inline-block}
+.product-grid .social li a{color:#fff;background-color:#333;font-size:16px;line-height:40px;text-align:center;height:40px;width:40px;margin:0 2px;display:block;position:relative;transition:all .3s ease-in-out}
+.product-grid .social li a:hover{color:#fff;background-color:#ef5777}
+.product-grid .social li a:after,.product-grid .social li a:before{content:attr(data-tip);color:#fff;background-color:#000;font-size:12px;letter-spacing:1px;line-height:20px;padding:1px 5px;white-space:nowrap;opacity:0;transform:translateX(-50%);position:absolute;left:50%;top:-30px}
+.product-grid .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-20px;z-index:-1}
+.product-grid .social li a:hover:after,.product-grid .social li a:hover:before{opacity:1}
+.product-grid .product-discount-label,.product-grid .product-new-label{color:white;background-color:#333;font-size:12px;text-transform:uppercase;padding:2px 7px;display:block;position:absolute;top:10px;left:0}
+.product-grid .product-discount-label{background-color:#333;left:auto;right:0}
+.product-grid .rating{color:#FFD200;font-size:12px;padding:12px 0 0;margin:0;list-style:none;position:relative;z-index:-1}
+.product-grid .rating li.disable{color:rgba(0,0,0,.2)}
+.product-grid .product-content{background-color:#fff;text-align:center;padding:12px 0;margin:0 auto;position:absolute;left:0;right:0;bottom:-27px;z-index:1;transition:all .3s}
+.product-grid:hover .product-content{bottom:0}
+.product-grid .title{font-size:13px;font-weight:400;letter-spacing:.5px;text-transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s}
+.product-grid .title a{color:#828282}
+.product-grid .title a:hover,.product-grid:hover .title a{color:black;}
+.product-grid .price{color:#333;font-size:17px;font-family:Montserrat,sans-serif;font-weight:700;letter-spacing:.6px;margin-bottom:8px;text-align:center;transition:all .3s}
+.product-grid .price span{color:#999;font-size:13px;font-weight:400;text-decoration:line-through;margin-left:3px;display:inline-block}
+.product-grid .add-to-cart{color:#000;font-size:13px;font-weight:600}
+@media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
+}
+#footer {
+    max-width:100vw;
+    padding:40px 10vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    background-color: #000e33;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='368' height='368' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23212144' stroke-width='1.9'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23555151'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#footer *{
+    color: white;
+}
+#footer .heading{
+	font-size: 22px;
+	margin: 0;
+}
+#footer p{
+	margin-bottom:10px;
+}
+.footer-inner{
+    padding:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Mono',monospace;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-variation-settings: 'wght' 500;
+    margin:20px 0;
+}
+.contact i{
+    margin-right:12px;
+}
+.footer-inner .links{
+    justify-content: flex-start;
+}
+.footer-inner .links i{
+	margin:25px;
+	font-size: 20px;
+    margin-left: 0;
+}
+  </style>
+	</head>
+	<body>
+		<!-- NAVBAR -->
+
+		<nav class="navbar">
+			<div class="logo-container">
+				<img src="/assets/sample_logo.png" alt="LOGO" class="logo" />
+			</div>
+			<div class="navbar-links">
+				<ul>
+					<li><a href="/index.html#home">HOME</a></li>
+					<li><a href="/index.html#services">SERVICES</a></li>
+					<li><a href="/index.html#about">ABOUT US</a></li>
+					<li>
+						<a href="#"><span class="signup">SIGN OUT</span></a>
+					</li>
+				</ul>
+			</div>
+
+			<span class="menu"><i class="fas fa-bars"></i></span>
+
+			<div class="navbar-links-responsive">
+				<i class="fas fa-times close" style="cursor: pointer"></i>
+				<ul class="responsive-ul">
+					<li><a href="/index.html#home">HOME</a></li>
+					<li><a href="/index.html#services">SERVICES</a></li>
+					<li><a href="/index.html#about">ABOUT US</a></li>
+					<li>
+						<a href="#"><span class="signup">SIGN OUT</span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<br>
+		
+		<div class="container" style="padding-top: 100px;">
+    <h3 class="h3">Surgeon</h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="/paths/consultation/img/surgon.png">
+                        <img class="pic-2" src="/paths/consultation/img/pdoctor.jpg">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Book Appointment"><i class="fa fa-ambulance" aria-hidden="true"></i></a></li>
+                        <li><a href="" data-tip="Online Consultation"><i class="fa fa-user-md" aria-hidden="true"></i></a></li>
+                    </ul>
+                    
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star disable"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#"><b>Dr. xyz</b></a></h3>
+                    <div class="price">$100.00
+                    </div>
+                    <a class="add-to-cart" href="">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="/paths/consultation/img/surgon.png">
+                        <img class="pic-2" src="/paths/consultation/img/surgon.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Book Appointment"><i class="fa fa-ambulance" aria-hidden="true"></i></a></li>
+                        <li><a href="" data-tip="Online Consultation"><i class="fa fa-user-md" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#"><b>Dr. xyz</b></a></h3>
+                    <div class="price">$297.00
+                        <span>$497.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="/paths/consultation/img/surgon.png">
+                        <img class="pic-2" src="/paths/consultation/img/surgon.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Book Appointment"><i class="fa fa-ambulance" aria-hidden="true"></i></a></li>
+                        <li><a href="" data-tip="Online Consultation"><i class="fa fa-user-md" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#"><b>Dr. xyz</b></a></h3>
+                    <div class="price">$297.00
+                        <span>$497.00</span>
+                    </div>
+                    <a class="add-to-cart" href="">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+<br>
+		<!-- FOOTER -->
+
+		<div id="footer">
+			<span class="heading">FIND US AT :</span>
+			<div class="footer-inner">
+				<div class="contact">
+					<span><i class="fas fa-envelope"></i>lifecare@gmail.com</span>
+					<span><i class="fas fa-phone-alt"></i>+91 987 654 3210</span>
+				</div>
+				<div class="links">
+					<a href="#" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="#" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="#" target="_blank">
+						<i class="fab fa-hackerrank"></i>
+					</a>
+				</div>
+			</div>
+			<p style='font-family:"Caveat"'>Designed with <i class="fas fa-heart"></i> By Pahul Kalra</p>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>
