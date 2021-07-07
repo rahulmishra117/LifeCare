@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rahulmishra117/LifeCare.git"
+    "url": ""
   },
   "author": "\"Rahul Mi ,Pahul Ka ,Rakshit Sh ,Rahul Ch\"",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rahulmishra117/LifeCare/issues"
   },
-  "homepage": "https://github.com/rahulmishra117/LifeCare#readme",
+  "homepage": "",
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.13.2",
