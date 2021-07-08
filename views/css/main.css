@@ -1,0 +1,31 @@
+/*body,
+ table,
+    thead,
+    tr,
+    tbody,
+    th,
+    td {
+        text-align: center;
+    }*/
+    body{
+        text-align: center !important;
+        background-image: url("https://cdn.dribbble.com/users/77121/screenshots/11134438/media/187c9dea6605b2f86a725a9a833beeb1.gif");
+    }
+    p{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    input{
+        text-align: center;
+    }
+    .mssg{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+    .form-group{
+        border-radius: 25px;
+        height: 250px;
+        background: #ffffff;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    }
