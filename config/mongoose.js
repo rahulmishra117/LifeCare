@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb://localhost/LifeCare', { useCreateIndex: true });
+mongoose.connect('mongodb+srv://Rahul:rahul@mycluster0.v5bvh.mongodb.net/Todo_app?retryWrites=true&w=majority', { useCreateIndex: true });
 
 
 const db=mongoose.connection;
